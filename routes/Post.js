@@ -9,7 +9,13 @@ var Router = new express.Router();
 
 Router.route('/posts')
 .get(function (req, res) {
-  Post.find(function (err, posts) {
+  Post.find()
+    .populate('author')
+    .populate({
+      path: 'comments',
+      populate: {path: 'author'}
+    })
+    .exec(function (err, posts) {
     if (err) {
       console.log(err);
     } else {
@@ -35,10 +41,6 @@ Router.route('/posts')
 Router.route('/posts/:id')
   .get(function (req, res) {
     Post.findById(req.params.id)
-      .populate({
-        path: 'comments',
-        populate: {path: author}
-      })
       .exec(function (err, post) {
         if (err) {
           res.json({ message: 'there was an error finding this post' });
@@ -84,6 +86,7 @@ Router.route('/posts/:id')
 
 Router.route('/posts/:id/comments')
 .post(function (req, res) {
+  if(req.user) {
   var comment = new Comment({
     author: req.user._id,
     text: req.body.text
@@ -109,7 +112,11 @@ Router.route('/posts/:id/comments')
       });
     }
   });
+} else {
+  res.json({message: 'you have to be logged in to post a comment'})
+}
 });
+
 
 Router.route('/posts/comments/:commentId')
 .get(function (req, res) {
@@ -148,6 +155,38 @@ Router.route('/posts/comments/:commentId')
     }
     }
   })
+})
+
+.delete(function (req, res) {
+  Comment.findById(req.params.commentId)
+    .populate('author')
+    .exec(function (err, comment) {
+    if (comment.author.role === 'admin' || comment.author._id === req.user._id) {
+      comment.remove(function (err, data){
+        if (err ){
+          console.log(err);
+        } else {
+        res.json({message: 'comment deleted'});
+        }
+      });
+    } else {
+      res.json({message: 'only admins or the creator of the comment can delete this comment'})
+    }
+  })
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = Router;
