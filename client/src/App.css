@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.myJumbotron {
+  background-color: #0d0d0d;
+  color: #FFFAFA;
+  border-radius: 50%;
+  border-style: double;
+  border-color: white;
+  text-align: center;
+}
+
+.JumbotronText {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.navbar{
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
