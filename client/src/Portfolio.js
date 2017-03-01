@@ -1,9 +1,10 @@
 import React from 'react';
+import PortfolioComponent from './PortfolioComponent';
 
 var Portfolio = function (props) {
   return (
     <div>
-      <h1> This is the portfolio page </h1>
+      <PortfolioComponent />
     </div>
   )
 }

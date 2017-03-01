@@ -1,9 +1,15 @@
 import React from 'react';
+import Story from './StoryComponent';
+import Info from './InfoComponent';
 
 var About = function () {
   return (
-    <div>
-      <h1> This is the about page </h1>
+    <div className='myContainer'>
+    <div className='AboutHeader'>
+      <h1> <strong> <em> About </em> </strong> </h1>
+    </div>
+      <Story />
+      <Info />
     </div>
   )
 }

@@ -1,0 +1,49 @@
+import React from 'react';
+import { Form, FormControl, Button } from 'react-bootstrap';
+// import { Link } from 'react-router';
+import $ from 'jquery';
+
+var Signup = React.createClass({
+  getInitialState: function () {
+    return ({
+      username: null,
+      password: null
+    });
+  },
+  onChangeHandler: function (field, val) {
+    var newData = {};
+    newData[field] = val;
+    this.setState(newData);
+  },
+  onSubmitHandler: function () {
+    $.ajax({
+      url:'/login',
+      method:"POST",
+      data: this.state
+    }).done(function (data) {
+      if (data.local) {
+        alert('User logged in');
+        self.setState({user: data})
+        window.location = '/#/';
+      } else {
+        if(data.message) {
+        alert(data.message);
+      }
+      alert("🤔🤔🤔🤔🤔Wrong username or password🤔🤔🤔🤔🤔")
+    }
+    });
+  },
+  render: function () {
+    return(
+      <div>
+        <Form className='Myform'>
+          <FormControl className='Myform-control' type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
+          <FormControl className='Myform-control' type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
+        </Form>
+        <Button bsStyle='success' onClick={ () => this.onSubmitHandler()}>Login</Button>
+      </div>
+    );
+  }
+})
+
+export default Signup;

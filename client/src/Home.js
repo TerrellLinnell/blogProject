@@ -8,7 +8,7 @@ var Home = function (props) {
       <h1 className='JumbotronText'> Welcome to Blogger! </h1>
     </Jumbotron>
     </div>
-  )
-}
+  );
+};
 
 export default Home;

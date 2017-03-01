@@ -28,4 +28,94 @@
 
 .navbar{
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  background-color: black;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand>img {
+  padding: 1px 1px;
+}
+
+ul.navbar-nav:last-child {
+  float: right;
+}
+
+.mynavbar-right {
+  float: right;
+}
+
+.Title {
+  width: 100%;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.Body {
+  margin-bottom: 45px;
+}
+
+.ProjectsTitle {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  width: 100%;
+  border-bottom: solid black;
+  border-width: thin;
+}
+
+.ProjectCommits {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  padding-bottom: 5px;
+}
+
+.StoryTitle {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.StoryBody {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  border: 1px solid black;
+  border-style: silver;
+  border-radius: 50px;
+  text-indent: 15px ;
+  display: inline-block;
+  margin-right: 600px;
+  margin-left: 50px;
+}
+
+.AboutHeader {
+text-align: center;
+font-size-adjust: 10em;
+text-shadow: 0 0 3px white;
+}
+
+a {
+  color: black;
+  text-shadow: 0 0 10px white, 0 0 2px white, 0 0 8px white;
+}
+
+.projectsButton {
+  border-radius: 1px;
+  border-style: double;
+  border-color: black;
+  border-width: thin;
+  margin-right: 100px;
+  text: bold;
+  display: inline-block;
+  float: right;
+  background-color: #c3c6cc;
+  margin-bottom: 2px;
+  margin-top: 2px;
+
+}
+
+.repositories {
+  margin-left: 50px;
 }
