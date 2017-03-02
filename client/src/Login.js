@@ -16,6 +16,7 @@ var Signup = React.createClass({
     this.setState(newData);
   },
   onSubmitHandler: function () {
+    var self = this;
     $.ajax({
       url:'/login',
       method:"POST",

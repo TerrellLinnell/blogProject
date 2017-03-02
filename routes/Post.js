@@ -26,6 +26,7 @@ Router.route('/posts')
 .post(function (req, res) {
   var post = new Post({
     author: req.user._id,
+    title: req.body.title,
     text: req.body.text
     // date: req.body.date,
   });
@@ -55,6 +56,7 @@ Router.route('/posts/:id')
         res.json({message: 'could not find Post.'});
       } else {
         post.author = req.body.author ? req.body.author : post.author;
+        post.title = req.body.title ? req.body.title : post.title;
         post.text = req.body.text ? req.body.text : post.text;
         post.comments = req.body.comments ? req.body.comments : post.comments;
         post.date = req.body.date ? req.body.date : post.date;

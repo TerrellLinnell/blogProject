@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 
 var Post = new Schema({
   author: {type: Schema.Types.ObjectId, ref: 'User'},
+  title: String,
   text: String,
   comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
   date: {type: Date, default: Date.now}

@@ -8,6 +8,7 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Signup from './Signup';
 import Login from './Login';
+import Blog from './Blog';
 
 ReactDOM.render(
   <Router history={hashHistory} >
@@ -17,7 +18,7 @@ ReactDOM.render(
   <Route path='/Portfolio' component={Portfolio}/>
   <Route path='/signup' component={Signup} />
   <Route path='/login' component={Login} />
-  {/* <Route path='/edit/:animalId' component={EditAnimalContainer}/> */}
+  <Route path='/Blog' component={Blog} />
   </Route>
 </Router>,
   document.getElementById('root')

@@ -87,6 +87,11 @@ app.post('/Update', isLoggedIn, function (req, res) {
   });
 });
 
+app.get('/logout', function (req, res) {
+  req.logout();
+  res.redirect('/');
+});
+
 function isLoggedIn (req, res, next) {
   if(req.isAuthenticated()) {
     return next();

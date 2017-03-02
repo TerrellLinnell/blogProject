@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev" : "nf start -p 3000 --procfile Procfile.dev",
-    "server": "node app.js"
+    "server": "node app.js",
+    "mon": "nodemon ./bin/www"
 
   },
   "dependencies": {
