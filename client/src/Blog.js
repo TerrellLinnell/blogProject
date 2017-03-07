@@ -43,7 +43,7 @@ var Blog = React.createClass ({
   },
   render: function () {
     return (
-      <div>
+      <div className="container">
         <BlogForm onChangeHandler={this.onChangeHandler} onClickHandler={this.onClickHandler} />
         <PostsDisplay Posts={this.state.posts} />
       </div>

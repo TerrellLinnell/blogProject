@@ -1,21 +1,30 @@
 import React from 'react';
+import Moment from 'moment';
 
 var PostsDisplay = function (props) {
   var Posts = [];
   console.log(props.Posts);
   if (props.Posts) {
     Posts = props.Posts.map(function (item) {
+      console.log(Moment(item.date));
       return (
         <div>
-          <h1> Author: {item.author.local.username} </h1>
-            <h3> Title: {item.title ? item.title : "untitled"} </h3>
-              <p> {item.text} </p>
-              <p> {item.date} </p>
-              <ul>
-                {item.comments.map(function (item) {
-                  return (<li>{item.text}</li>);
-                })}
-              </ul>
+          <div className='myContainer row'>
+            <h2 className='Author'>☞{item.author.local.username} </h2>
+            <h4 className='PostTitle'> <em>{item.title ? item.title : "untitled"}</em> </h4>
+            <p className='PostText'> {item.text} </p>
+            <p className='PostDate'> <em> Posted on {Moment(item.date).format("MMM Do YYYY")} </em> </p>
+          </div>
+          <div className='CommentContainer'>
+              {item.comments.map(function (item) {
+                return (
+                  <div>
+                    <h4 className='commentAuthor'> ☞{item.author.local.username}</h4>
+                    <p className='PostText'>{item.text}</p>
+                    <p className='PostDate'> <em> Posted on {Moment(item.date).format("MMM Do YYYY")} </em> </p>
+                  </div>);
+              })}
+            </div>
         </div>
       );
     });

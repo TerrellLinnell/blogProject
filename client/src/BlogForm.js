@@ -5,13 +5,13 @@ var BlogForm = function (props) {
   return (
     <div>
       <Form>
-        <FormGroup>
+        <FormGroup className='blogForm'>
           <FormControl type='text' placeholder='Title' onChange={ (event) => props.onChangeHandler("title", event.target.value)} />
         </FormGroup>
-        <FormGroup>
-          <FormControl type='text' placeholder='...' onChange={ (event) => props.onChangeHandler("text", event.target.value)} />
+        <FormGroup className='blogForm'>
+          <FormControl type='text' placeholder='Story' onChange={ (event) => props.onChangeHandler("text", event.target.value)} />
         </FormGroup>
-        <Button bsStyle='success' onClick={ () => props.onClickHandler()}> Post </Button>
+        <Button className='blogButton'bsStyle='success' onClick={ () => props.onClickHandler()}> <em>Post</em> </Button>
       </Form>
     </div>
   )

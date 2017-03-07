@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormControl, Button } from 'react-bootstrap';
+import { Form, FormControl, FormGroup, Button } from 'react-bootstrap';
 // import { Link } from 'react-router';
 import $ from 'jquery';
 
@@ -34,10 +34,14 @@ var Signup = React.createClass({
     return(
       <div>
         <Form>
-          <FormControl type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
-          <FormControl type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
+          <FormGroup className='SignupForm'>
+            <FormControl type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
+          </FormGroup>
+          <FormGroup className='SignupForm'>
+            <FormControl type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
+          </FormGroup>
         </Form>
-        <Button bsStyle='primary' onClick={ () => this.onSubmitHandler()}>Add User</Button>
+        <Button className='SignupButton' bsStyle='success' onClick={ () => this.onSubmitHandler()}>Add User</Button>
       </div>
     )
   }
