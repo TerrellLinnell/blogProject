@@ -71,7 +71,7 @@ Router.route('/posts/:id')
     })
   })
   .delete(function (req, res) {
-    User.findById(req.user._id, function (err, user) {
+    User.findById(req.user.id, function (err, user) {
       if (user.role === 'admin') {
         Post.remove({ _id: req.params.id }, function (err, data){
           if (err ){

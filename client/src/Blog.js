@@ -32,6 +32,28 @@ var Blog = React.createClass ({
         window.location='/#/blog'
       })
   },
+  CommentDeleteHandler: function (id) {
+    $.ajax({
+      url: '/api/posts/comments/' +id,
+      method: 'DELETE'
+    }).done(function (data) {
+      console.log(data);
+    })
+  },
+  deleteHandler: function (id) {
+    $.ajax({
+      url: '/api/posts/' +id,
+      method: 'DELETE'
+    }).done(function (data) {
+      console.log(data);
+    })
+  },
+  UpdateHandler: function (id) {
+    window.location='/#/UpdatePostContainer/' + id;
+  },
+  UpdateCommentHandler: function (id) {
+    window.location='/#/UpdateCommentContainer/' +id;
+  },
   Posts: function () {
     var self = this;
     $.ajax({
@@ -45,7 +67,7 @@ var Blog = React.createClass ({
     return (
       <div className="container">
         <BlogForm onChangeHandler={this.onChangeHandler} onClickHandler={this.onClickHandler} />
-        <PostsDisplay Posts={this.state.posts} />
+        <PostsDisplay UpdateCommentHandler={this.UpdateCommentHandler} CommentDeleteHandler={this.CommentDeleteHandler} CommentOnClickHandler={this.CommentOnClickHandler} Posts={this.state.posts} deleteHandler={this.deleteHandler} UpdateHandler={this.UpdateHandler}/>
       </div>
     );
   }

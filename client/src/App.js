@@ -35,7 +35,7 @@ var App = React.createClass({
             </Nav>
           </Navbar>
         <div>
-          {this.props.children}
+          {this.props.children && React.cloneElement(this.props.children, {})}
         </div>
       </div>
     )
