@@ -1,6 +1,6 @@
 import React from 'react';
 import Moment from 'moment';
-import { Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 var PostsDisplay = function (props) {
   var Posts = [];
@@ -25,6 +25,12 @@ var PostsDisplay = function (props) {
                     <p className='PostDate'> <em> Posted on {Moment(item.date).format("MMM Do YYYY")} </em> </p>
                   </div>);
               })}
+              <div className='commentForm'>
+                <Form>
+                  <textarea rows='3' cols='139' type='text' placeholder='comment' onChange={ (event) => props.onChangeHandler('newCommentText', event.target.value)} />
+                </Form>
+              <Button bsStyle='success' className='CommentButton' onClick={ () => props.CommentOnClickHandler(item._id)} > post comment </Button>
+              </div>
             </div>
         </div>
       );

@@ -9,15 +9,13 @@ var Story = function () {
       </div>
       <div className='StoryBody Body'>
         <p>
-          Hey, im creating this block of text ggh jjhs hello there world how are yiu doing today?
-
-            in im doing good howyou? aboout  lall lalalall  lalalal  la  la  lalla ala lsjshdhfg
-
-            order dohosfne jfnefsb fskje skejfbesjfbsef kfjebfkjsef esjfbsekjf sekfjbsekjf es ah
-
-            to haha ahaha aha aha aha ahaha aha aha ahaha haha aha aha haha ahahaha ahahah aahak
-
-            test how my story will be portrayed hahh aha hha haahh ahh ahha hahha ahah ahahaahhah
+        I grew up in Eureka MT, and moved down here to Bozeman my junior year of highschool.
+        I moved with my dad because my mom and dad split up.  At first i was a little upset and nervous about stating a new school especially
+        one with so many kids. Eureka has about 1500 people total and bout 40 kids to a graduating class.  In bozeman there are like 400 kids
+        in a graduating class so yeah, I was nervous. In the end it worked out becaus ei got a better education but at the same time it didnt matter
+        all that much because im not going to college. Instead I am going to a 3 month coding bootcamp.  So looking back I wish I had taken
+        auto, welding, and woods instead of physics and AP calculus.  But oh well life goes on, im hoping to get a decent job when I finish school.
+        So theres a bit about me 🤔.
         </p>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 var Info = function () {
   return (
-    <div>
+    <div className='infoComponent'>
       <div>
         <h2 className=' StoryTitle Title'> <strong> <em> Info </em> </strong> </h2>
       </div>

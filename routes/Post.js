@@ -163,17 +163,23 @@ Router.route('/posts/comments/:commentId')
   Comment.findById(req.params.commentId)
     .populate('author')
     .exec(function (err, comment) {
-    if (comment.author.role === 'admin' || comment.author._id === req.user._id) {
-      comment.remove(function (err, data){
-        if (err ){
-          console.log(err);
+      User.findById(req.user._id, function (err, user) {
+        if (err) {
+          res.json({message: 'you must log in to delte comments'})
         } else {
-        res.json({message: 'comment deleted'});
+          if (user.role === 'admin' || comment.author._id === req.user._id) {
+            comment.remove(function (err, data){
+              if (err ){
+                console.log(err);
+              } else {
+              res.json({message: 'comment deleted'});
+              }
+            });
+          } else {
+            res.json({message: 'only admins or the creator of the comment can delete this comment'})
+          }
         }
-      });
-    } else {
-      res.json({message: 'only admins or the creator of the comment can delete this comment'})
-    }
+      })
   })
 });
 

@@ -10,7 +10,9 @@ var Blog = React.createClass ({
       title: null,
       text: null,
       comments: null,
-      date: null,
+      newCommentText: null,
+      postDate: null,
+      commentDate: null,
       posts: null
     });
   },
@@ -27,6 +29,16 @@ var Blog = React.createClass ({
         url: '/api/posts',
         method: 'POST',
         data: this.state
+      }).done(function (data) {
+        console.log(data);
+        window.location='/#/blog'
+      })
+  },
+  CommentOnClickHandler: function (id) {
+      $.ajax({
+        url: '/api/posts/' + id + '/comments',
+        method: 'POST',
+        data: {text: this.state.newCommentText}
       }).done(function (data) {
         console.log(data);
         window.location='/#/blog'
@@ -67,7 +79,7 @@ var Blog = React.createClass ({
     return (
       <div className="container">
         <BlogForm onChangeHandler={this.onChangeHandler} onClickHandler={this.onClickHandler} />
-        <PostsDisplay UpdateCommentHandler={this.UpdateCommentHandler} CommentDeleteHandler={this.CommentDeleteHandler} CommentOnClickHandler={this.CommentOnClickHandler} Posts={this.state.posts} deleteHandler={this.deleteHandler} UpdateHandler={this.UpdateHandler}/>
+        <PostsDisplay onChangeHandler={this.onChangeHandler} UpdateCommentHandler={this.UpdateCommentHandler} CommentDeleteHandler={this.CommentDeleteHandler} CommentOnClickHandler={this.CommentOnClickHandler} Posts={this.state.posts} deleteHandler={this.deleteHandler} UpdateHandler={this.UpdateHandler}/>
       </div>
     );
   }

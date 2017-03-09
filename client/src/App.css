@@ -48,7 +48,6 @@ ul.navbar-nav:last-child {
   width: 100%;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   border-bottom: 2px solid black;
-  width: 100%;
 }
 
 .Body {
@@ -83,8 +82,8 @@ ul.navbar-nav:last-child {
   border-radius: 50px;
   text-indent: 15px ;
   display: inline-block;
-  margin-right: 600px;
-  margin-left: 50px;
+  margin-right: 500px;
+  margin-left: 65px;
 }
 
 .AboutHeader {
@@ -120,7 +119,7 @@ a {
 .blogForm {
   border: 1px solid black;
   margin-left: 90px;
-  margin-right: 90px;
+  margin-right: 800px;
   border-radius: 6px;
 }
 
@@ -132,7 +131,7 @@ a {
   text: bold;
   float: right;
   background-color: #c3c6cc;
-  margin-right: 90px;
+  margin-right: 97px;
   text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
 }
 
@@ -158,11 +157,12 @@ a {
 .Author {
   margin-top: 0px;
   border-bottom: 1px solid black;
-  background-color: blue;
+  background-color: black;
   color: white;
   margin-bottom: 0px;
   padding-top: 2px;
   padding-bottom: 2px;
+  text-shadow: 0 0 7px white, 0 0 1px black;
 }
 
 .PostTitle {
@@ -179,7 +179,9 @@ a {
   padding-top: 5px;
   padding-left: 5px;
   margin-right: 20px;
-  background-color: lightblue;
+  background-color: grey;
+  color: white;
+  padding-bottom: 1px;
 }
 
 .PostText {
@@ -211,18 +213,22 @@ a {
 }
 
 .myContainer {
-  border: 1px solid black;
   margin-left: 20px;
   margin-top: 70px;
   margin-right: 40px;
   padding-top: 0px;
+  border: 1px solid black;
   border-bottom-left-radius: 10px;
 }
 
+.myAboutContainer {
+  margin-left: 20px;
+  padding-top: 0px;
+}
 .commentAuthor {
   margin-top: 0px;
   border-bottom: 1px solid black;
-  background-color: blue;
+  background-color: #FF4500;
   color: white;
   margin-bottom: 0px;
   padding-top: 3px;
@@ -234,8 +240,7 @@ a {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-left: 30px;
+  margin-left: 70px;
   margin-right: 40px;
 }
 
@@ -262,4 +267,60 @@ a {
   background-color: blue;
   text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
   max-height: 75%;
+}
+
+.CommentButton::after {
+  clear: both;
+}
+
+.CommentButton {
+    border-radius: 1px;
+    border-style: double;
+    border-color: black;
+    border-width: medium;
+    text: bold;
+    float: right;
+    background-color: #c3c6cc;
+    text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
+}
+
+.commentForm {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  margin-left: 80px;
+  margin-right: 40px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 10px 10px 40px 10px;
+}
+
+.mytextarea {
+  height: 100%;
+  border-radius: 5px;
+  margin-left: 90px;
+  margin-right: 80px;
+  margin-bottom: 0px;
+}
+
+.myFormGroup {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.infoComponent {
+  margin-bottom: 100px;
+}
+
+.HomeBody {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  text-indent: 15px ;
+  display: inline-block;
+  margin-right: 200px;
+  margin-left: 40px;
+  margin-top: 50px;
 }

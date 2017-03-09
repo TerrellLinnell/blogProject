@@ -4,7 +4,7 @@ import Info from './InfoComponent';
 
 var About = function () {
   return (
-    <div className='myContainer'>
+    <div className='myAboutContainer'>
     <div className='AboutHeader'>
       <h1> <strong> <em> About </em> </strong> </h1>
     </div>
