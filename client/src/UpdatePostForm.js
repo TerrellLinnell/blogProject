@@ -8,11 +8,9 @@ var UpdatePostForm = function (props) {
         <FormGroup className='blogForm'>
           <FormControl type='text' placeholder='Title' value={props.title} onChange={ (event) => props.onChangeHandler('title', event.target.value)} />
         </FormGroup>
-        <FormGroup className='blogForm'>
-          <FormControl type='text' placeholder='Story' value={props.text} onChange={ (event) => props.onChangeHandler('text', event.target.value)} />
-        </FormGroup>
+          <textarea className='mytextarea' rows='5' cols='133' type='text' placeholder='Story' value={props.text} onChange={ (event) => props.onChangeHandler('text', event.target.value)} />
       </Form>
-      <Button bsStyle='success' className='blogButton' onClick={ () => props.onClickHandler()}> Update Post </Button>
+      <Button bsStyle='success' className='UpdatePostButton' onClick={ () => props.onClickHandler()}> Update Post </Button>
     </div>
   );
 }

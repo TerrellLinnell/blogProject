@@ -15,7 +15,7 @@ var Home = function (props) {
           <strong> This is my first project during my study at <em>Big Sky Code Academy</em>.</strong>
         </h5>
         <h5>
-          <strong>It is a blogging website but only I can post blogs. However if you sign in you can comment on my blog posts!</strong>
+          <strong>It is a blogging website, if you sign up and log in you can post to the blog page and comment on any blog posts!</strong>
         </h5>
         <h5>
           <strong>All you have to do is sign up and sign in, enjoy your stay here at Blogger!</strong>

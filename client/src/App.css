@@ -324,3 +324,15 @@ a {
   margin-left: 40px;
   margin-top: 50px;
 }
+
+.UpdatePostButton {
+  border-radius: 1px;
+  border-style: double;
+  border-color: black;
+  border-width: medium;
+  text: bold;
+  float: right;
+  background-color: #c3c6cc;
+  margin-right: 237px;
+  text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
+}
