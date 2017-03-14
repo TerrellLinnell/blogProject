@@ -1,3 +1,8 @@
+.mycontainer {
+  background-color: black;
+  color: lime;
+}
+
 .App {
   text-align: center;
 }
@@ -18,17 +23,21 @@
   color: #FFFAFA;
   border-radius: 50%;
   border-style: double;
-  border-color: white;
+  border-color: lime;
   text-align: center;
+  color: lime;
+  border-width: thick;
 }
 
 .JumbotronText {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  color: lime;
 }
 
 .navbar{
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   background-color: black;
+  border-bottom: 1px solid green;
 }
 
 .navbar-brand {
@@ -47,7 +56,7 @@ ul.navbar-nav:last-child {
 .Title {
   width: 100%;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid lime;
 }
 
 .Body {
@@ -57,7 +66,7 @@ ul.navbar-nav:last-child {
 .ProjectsTitle {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   width: 100%;
-  border-bottom: solid black;
+  border-bottom: solid lime;
   border-width: thin;
 }
 
@@ -93,23 +102,22 @@ text-shadow: 0 0 3px white;
 }
 
 a {
-  color: black;
-  text-shadow: 0 0 10px white, 0 0 2px white, 0 0 8px white;
+  color: lime;
+  text-shadow:0 0 2px black;
 }
 
 .projectsButton {
   border-radius: 1px;
   border-style: double;
-  border-color: black;
+  border-color: lime;
   border-width: thin;
   margin-right: 100px;
   text: bold;
   display: inline-block;
   float: right;
-  background-color: #c3c6cc;
+  background-color: black;
   margin-bottom: 2px;
   margin-top: 2px;
-
 }
 
 .repositories {
@@ -121,81 +129,94 @@ a {
   margin-left: 90px;
   margin-right: 800px;
   border-radius: 6px;
+  color: lime;
+  border-color: lime;
+  background-color: black;
 }
 
 .blogButton {
+  color: lime;
   border-radius: 1px;
   border-style: double;
-  border-color: black;
-  border-width: medium;
+  border-color: lime;
+  border-width: thin;
   text: bold;
   float: right;
-  background-color: #c3c6cc;
-  margin-right: 97px;
+  background-color: black;
+  margin-right: 99px;
   text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
 }
 
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .SignupForm {
-  border: 1px solid black;
-  margin-left: 400px;
-  margin-right: 400px;
+  width: 33%;
+}
+
+.SignupInput {
+  color: lime;
+  background-color: black;
+  border: 1px solid lime;
   border-radius: 6px;
 }
 
 .SignupButton {
   border-radius: 1px;
   border-style: double;
-  border-color: black;
+  border-color: lime;
   border-width: medium;
   text: bold;
-  float: right;
-  background-color: #c3c6cc;
-  margin-right: 600px;
-  text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
+  /*float: right;*/
+  background-color: black;
+  /*margin-right: 600px;*/
+  text-shadow: 0 0 10px lime, 0 0 2px black, 0 0 8px lime;
 }
 
 .Author {
   margin-top: 0px;
   border-bottom: 1px solid black;
-  background-color: black;
-  color: white;
+  background-color: lime;
+  color: black;
   margin-bottom: 0px;
   padding-top: 2px;
   padding-bottom: 2px;
-  text-shadow: 0 0 7px white, 0 0 1px black;
 }
 
 .PostTitle {
-  margin-left: 50px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  margin-left: 40px;
+  border-top: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-left: 1px solid lime;
+  border-right: 1px solid lime;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin-bottom: 0px;
   margin-top: 5px;
   padding-bottom: 10px;
   padding-top: 5px;
   padding-left: 5px;
   margin-right: 20px;
-  background-color: grey;
-  color: white;
+  background-color: black;
+  color: lime;
   padding-bottom: 1px;
 }
 
 .PostText {
   margin-left: 50px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid lime;
+  border-left: 1px solid lime;
+  border-right: 1px solid lime;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   margin-right: 20px;
-
 }
 
 .PostDate::after {
@@ -204,8 +225,8 @@ a {
 
 .PostDate {
   float: right;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-top: 1px solid lime;
+  border-left: 1px solid lime;
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 0px;
@@ -217,7 +238,7 @@ a {
   margin-top: 70px;
   margin-right: 40px;
   padding-top: 0px;
-  border: 1px solid black;
+  border: 1px solid lime;
   border-bottom-left-radius: 10px;
 }
 
@@ -227,8 +248,8 @@ a {
 }
 .commentAuthor {
   margin-top: 0px;
-  border-bottom: 1px solid black;
-  background-color: #FF4500;
+  border-bottom: 1px solid lime;
+  background-color: black;
   color: white;
   margin-bottom: 0px;
   padding-top: 3px;
@@ -236,37 +257,65 @@ a {
 }
 
 .CommentContainer {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-right: 1px solid lime;
   border-bottom-left-radius: 10px;
   margin-left: 70px;
   margin-right: 40px;
 }
 
 .postDeleteButton {
+  color: lime;
   float: right;
-  border: 1px outset black;
+  border: 1px double lime;
   margin-right: 3px;
+  margin-top: 2px;
   border-radius: 1px;
-  border-color: white;
   border-width: medium;
   text: bold;
-  background-color: red;
-  text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
-
+  background-color: black;
+  text-shadow: 0 0 10px #FF0000, 0 0 2px black;
 }
 .postUpdateButton {
+  color: lime;
   float: right;
-  border: 1px outset black;
+  border: 1px double lime;
   margin-right: 1px;
+  margin-top: 2px;
   border-radius: 1px;
-  border-color: white;
   border-width: medium;
   text: bold;
-  background-color: blue;
-  text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
+  background-color: black;
   max-height: 75%;
+  text-shadow: 0 0 10px blue, 0 0 2px black, 0 0 8px blue;
+}
+.commentDeleteButton {
+  color: lime;
+  float: right;
+  border: 1px inset lime;
+  margin-right: 3px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  border-radius: 1px;
+  border-width: thin;
+  text: bold;
+  background-color: black;
+  text-shadow: 0 0 10px red, 0 0 2px black, 0 0 8px red;
+}
+.commentUpdateButton {
+  color: lime;
+  float: right;
+  border: 1px inset lime;
+  margin-right: 3px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  border-radius: 1px;
+  border-width: thin;
+  text: bold;
+  background-color: black;
+  max-height: 75%;
+  text-shadow: 0 0 10px blue, 0 0 2px black, 0 0 8px blue;
 }
 
 .CommentButton::after {
@@ -276,18 +325,33 @@ a {
 .CommentButton {
     border-radius: 1px;
     border-style: double;
-    border-color: black;
-    border-width: medium;
+    border-color: lime;
+    border-width: thin;
     text: bold;
     float: right;
-    background-color: #c3c6cc;
-    text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
+    background-color: black;
+    color: lime;
+    text-shadow: 0 0 5px white, 0 0 2px black, 0 0 6px white;
 }
 
+.commentText {
+    margin-left: 50px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
 .commentForm {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  color: lime;
+  background-color: black;
+  border-left: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-right: 1px solid lime;
   margin-left: 80px;
   margin-right: 40px;
   border-bottom-left-radius: 6px;
@@ -297,6 +361,9 @@ a {
 
 .mytextarea {
   height: 100%;
+  color: lime;
+  border-color: lime;
+  background-color: black;
   border-radius: 5px;
   margin-left: 90px;
   margin-right: 80px;
@@ -328,11 +395,19 @@ a {
 .UpdatePostButton {
   border-radius: 1px;
   border-style: double;
-  border-color: black;
+  border-color: lime;
   border-width: medium;
   text: bold;
   float: right;
-  background-color: #c3c6cc;
+  color: lime;
+  background-color: black;
   margin-right: 237px;
-  text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
+  text-shadow: 0 0 10px lime, 0 0 2px black, 0 0 8px lime;
+}
+
+.BlogTitle {
+  border-color: lime;
+  color: lime;
+  background-color: black;
+  border-width: thin;
 }

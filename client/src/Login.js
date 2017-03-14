@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormControl, FormGroup, Button } from 'react-bootstrap';
+import { Form, FormControl, FormGroup, Button, Col } from 'react-bootstrap';
 // import { Link } from 'react-router';
 import $ from 'jquery';
 
@@ -36,13 +36,13 @@ var Signup = React.createClass({
   },
   render: function () {
     return(
-      <div>
-        <Form className='Myform'>
-          <FormGroup className='SignupForm'>
-            <FormControl className='Myform-control' type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
+      <div className='signupContainer'>
+        <Form>
+          <FormGroup>
+            <FormControl className='SignupForm' type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
           </FormGroup>
-          <FormGroup className='SignupForm'>
-            <FormControl className='Myform-control' type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
+          <FormGroup>
+            <FormControl  className='SignupForm' type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
           </FormGroup>
         </Form>
         <Button className='SignupButton' bsStyle='success' onClick={ () => this.onSubmitHandler()}>Login</Button>

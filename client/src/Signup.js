@@ -32,13 +32,13 @@ var Signup = React.createClass({
   },
   render: function () {
     return(
-      <div>
-        <Form>
-          <FormGroup className='SignupForm'>
-            <FormControl type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
+      <div className='signupContainer'>
+        <Form className='SignupForm'>
+          <FormGroup>
+            <FormControl className='SignupInput' type='text' placeholder='username' onChange={ (event) => this.onChangeHandler('username', event.target.value)} />
           </FormGroup>
-          <FormGroup className='SignupForm'>
-            <FormControl type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
+          <FormGroup>
+            <FormControl className='SignupInput' type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
           </FormGroup>
         </Form>
         <Button className='SignupButton' bsStyle='success' onClick={ () => this.onSubmitHandler()}>Add User</Button>

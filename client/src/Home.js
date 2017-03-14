@@ -3,7 +3,7 @@ import { Jumbotron } from 'react-bootstrap';
 
 var Home = function (props) {
   return (
-    <div>
+    <div className='mycontainer'>
     <Jumbotron className='myJumbotron'>
       <h1 className='JumbotronText'> Welcome to Blogger! </h1>
     </Jumbotron>
@@ -15,7 +15,7 @@ var Home = function (props) {
           <strong> This is my first project during my study at <em>Big Sky Code Academy</em>.</strong>
         </h5>
         <h5>
-          <strong>It is a blogging website, if you sign up and log in you can post to the blog page and comment on any blog posts!</strong>
+          <strong>It is a blogging website, you can not create a blog post but you can comment on any of my blog posts! </strong>
         </h5>
         <h5>
           <strong>All you have to do is sign up and sign in, enjoy your stay here at Blogger!</strong>

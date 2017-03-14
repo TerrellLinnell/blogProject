@@ -6,7 +6,7 @@ var UpdatePostForm = function (props) {
     <div>
       <Form>
         <FormGroup className='blogForm'>
-          <FormControl type='text' placeholder='Title' value={props.title} onChange={ (event) => props.onChangeHandler('title', event.target.value)} />
+          <FormControl className='BlogTitle' type='text' placeholder='Title' value={props.title} onChange={ (event) => props.onChangeHandler('title', event.target.value)} />
         </FormGroup>
           <textarea className='mytextarea' rows='5' cols='133' type='text' placeholder='Story' value={props.text} onChange={ (event) => props.onChangeHandler('text', event.target.value)} />
       </Form>
