@@ -35,6 +35,8 @@ var Info = function () {
             <li>Es5</li>
             <li>Es6</li>
             <li>GitHub</li>
+            <li> Passport </li>
+            <li>Auth0</li>
           </ul>
         </ul>
       </div>
