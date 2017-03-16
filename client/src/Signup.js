@@ -41,7 +41,7 @@ var Signup = React.createClass({
             <FormControl className='SignupInput' type='text' placeholder='password' onChange={ (event) => this.onChangeHandler('password', event.target.value)} />
           </FormGroup>
         </Form>
-        <Button className='SignupButton' bsStyle='success' onClick={ () => this.onSubmitHandler()}>Add User</Button>
+        <Button className='SignupButton' bsStyle='success' onClick={ () => this.onSubmitHandler()}>Signup</Button>
       </div>
     )
   }

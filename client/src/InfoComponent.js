@@ -37,6 +37,9 @@ var Info = function () {
             <li>GitHub</li>
             <li> Passport </li>
             <li>Auth0</li>
+            <li> Jest </li>
+            <li> enzyme </li>
+            <li>jasmine-node</li>
           </ul>
         </ul>
       </div>

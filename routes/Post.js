@@ -24,6 +24,8 @@ Router.route('/posts')
   });
 })
 .post(function (req, res) {
+  User.findById(req.user.id, function (err, user) {
+  if (user.role === 'admin') {
   var post = new Post({
     author: req.user._id,
     title: req.body.title,
@@ -37,6 +39,10 @@ Router.route('/posts')
       res.json(post);
     }
   });
+} else {
+  res.json ({error: 'only the admin can create posts'});
+}
+});
 });
 
 Router.route('/posts/:id')
