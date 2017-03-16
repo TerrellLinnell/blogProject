@@ -57,7 +57,7 @@ app.get('/profile', isLoggedIn, function (req, res) {
 app.post('/Update', isLoggedIn, function (req, res) {
   User.findById(req.user._id, function (err, user) {
     if (err) {
-      req.flash('updateMessage', 'Update Falied: Failed to Find User.');
+      req.flash('updateMessage', 'Update Failed: Failed to Find User.');
       res.redirect('/profile');
       console.log(err);
     } else {

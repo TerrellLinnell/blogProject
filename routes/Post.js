@@ -34,7 +34,7 @@ Router.route('/posts')
   });
   post.save(function (err, post) {
     if (err) {
-      res.json({message: 'There was an error saving this user'});
+      res.json({message: 'There was an error saving this post'});
     } else {
       res.json(post);
     }
@@ -171,7 +171,7 @@ Router.route('/posts/comments/:commentId')
     .exec(function (err, comment) {
       User.findById(req.user._id, function (err, user) {
         if (err) {
-          res.json({message: 'you must log in to delte comments'})
+          res.json({message: 'you must log in to delete comments'})
         } else {
           if (user.role === 'admin' || comment.author._id === req.user._id) {
             comment.remove(function (err, data){

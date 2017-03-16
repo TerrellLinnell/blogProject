@@ -1,3 +1,21 @@
+
+
+
+.blogFormContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.newBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .mycontainer {
   background-color: black;
   color: lime;
@@ -125,9 +143,12 @@ a {
 }
 
 .blogForm {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 25%;
   border: 1px solid black;
-  margin-left: 90px;
-  margin-right: 800px;
   border-radius: 6px;
   color: lime;
   border-color: lime;
@@ -135,15 +156,14 @@ a {
 }
 
 .blogButton {
+  align-self: flex-end;
   color: lime;
   border-radius: 1px;
   border-style: double;
   border-color: lime;
   border-width: thin;
   text: bold;
-  float: right;
   background-color: black;
-  margin-right: 99px;
   text-shadow: 0 0 10px white, 0 0 2px black, 0 0 8px white;
 }
 
@@ -360,14 +380,11 @@ a {
 }
 
 .mytextarea {
-  height: 100%;
+  width: 100%;
   color: lime;
   border-color: lime;
   background-color: black;
   border-radius: 5px;
-  margin-left: 90px;
-  margin-right: 80px;
-  margin-bottom: 0px;
 }
 
 .myFormGroup {
@@ -406,6 +423,8 @@ a {
 }
 
 .BlogTitle {
+  margin-bottom: 10px;
+  width: 30%;
   border-color: lime;
   color: lime;
   background-color: black;
