@@ -46,7 +46,12 @@ var PortfolioComponent = React.createClass({
   reposList: function () {
     console.log(this.state.repos);
     return this.state.repos.map(function (item) {
-      return (<tr className='ProjectsTitle' key={item.name}> <td> <h4><strong className='repositories'> {item.name} </strong> </h4></td> <td><button className='projectsButton'> <a href={item.url}> click for details </a> </button> </td> </tr> )
+      return (
+        <div className='ProjectFlexBox'>
+          <h4><strong> {item.name} </strong> </h4>
+          <button className='projectsButton'> <a href={item.url}> click for details </a> </button>
+        </div>
+      );
     });
   },
   commitsList: function () {
@@ -60,10 +65,8 @@ var PortfolioComponent = React.createClass({
       <div>
         <h2 className='StoryTitle Title'> <strong> <em> Projects </em> </strong> </h2>
       </div>
-      <div>
-        <Table>
+      <div className="repositories">
           {this.reposList()}
-        </Table>
       </div>
       <div>
         <h2 className=' StoryTitle Title'> <strong> <em> Latest commits </em> </strong> </h2>

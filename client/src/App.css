@@ -311,10 +311,14 @@ ul.navbar-nav:last-child {
   margin-bottom: 45px;
 }
 
-.ProjectsTitle {
+.ProjectFlexBox {
+  display: flex;
+  justify-content: space-between;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   width: 100%;
   border-bottom: solid lime;
+  padding-left: 2%;
+  padding-right: 2%;
   border-width: thin;
 }
 
@@ -355,22 +359,24 @@ a {
 }
 
 .projectsButton {
+  align-self: center;
   border-radius: 1px;
   border-style: double;
   border-color: lime;
   border-width: thin;
-  margin-right: 100px;
   text: bold;
-  display: inline-block;
-  float: right;
   background-color: black;
   margin-bottom: 2px;
   margin-top: 2px;
 }
 
 .repositories {
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
 
 .blogForm {
   display: flex;
