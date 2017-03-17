@@ -1,5 +1,240 @@
+.postDeleteButton {
+  align-self: flex-end;
+  color: lime;
+  border: 1px double lime;
+  border-radius: 1px;
+  border-width: medium;
+  text: bold;
+  background-color: black;
+  text-shadow: 0 0 10px #FF0000, 0 0 2px black;
+}
+.postUpdateButton {
+  align-self: flex-end;
+  color: lime;
+  border: 1px double lime;
+  border-radius: 1px;
+  border-width: medium;
+  text: bold;
+  background-color: black;
+  text-shadow: 0 0 10px blue, 0 0 2px black, 0 0 8px blue;
+}
 
+.commentBodyFlexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
+}
 
+.commentDeleteButton {
+  align-self: flex-end;
+  color: lime;
+  border: 1px inset lime;
+  border-radius: 1px;
+  border-width: thin;
+  text: bold;
+  background-color: black;
+  text-shadow: 0 0 10px red, 0 0 2px black, 0 0 8px red;
+  margin: 1px 3px 1px 0px;
+}
+
+.commentUpdateButton {
+  align-self: flex-end;
+  color: lime;
+  border: 1px inset lime;
+  border-radius: 1px;
+  border-width: thin;
+  text: bold;
+  background-color: black;
+  text-shadow: 0 0 10px blue, 0 0 2px black, 0 0 8px blue;
+  margin: 1px 3px 1px 0px;
+}
+
+.BlogTitle {
+  margin-bottom: 10px;
+  width: 30%;
+  border-color: lime;
+  color: lime;
+  background-color: black;
+  border-width: thin;
+}
+
+.CommentButton::after {
+  clear: both;
+}
+
+.CommentButton {
+    align-self: flex-end;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border-radius: 1px;
+    border-style: double;
+    border-color: lime;
+    border-width: thin;
+    text: bold;
+    float: right;
+    background-color: black;
+    color: lime;
+    text-shadow: 0 0 5px white, 0 0 2px black, 0 0 6px white;
+}
+
+.NewCommentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 96%;
+}
+
+.NewCommentTextArea {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 96%;
+  border-color: lime;
+  color: lime;
+  background-color: black;
+  border-width: thin;
+}
+
+.NewCommentFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%;
+  color: lime;
+  background-color: black;
+  border-left: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-right: 1px solid lime;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.commentText {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+.commentAuthor {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.commentAuthorBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  border-bottom: 1px solid lime;
+  background-color: black;
+  color: lime;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.CommentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 98%;
+  border-left: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-right: 1px solid lime;
+}
+
+.CommentContainer:nth-last-child(2) {
+  border-bottom-left-radius: 10px;
+}
+
+.PostDate {
+  align-self: flex-end;
+  margin-bottom: 0px;
+  border-top: 1px solid lime;
+  border-left: 1px solid lime;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-top-left-radius: 5px;
+}
+
+.PostText {
+  align-self: center;
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.PostStoryFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.PostTitle {
+  align-self: center;
+  width: 90%;
+  border-bottom: 1px solid lime;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 0px;
+  background-color: black;
+  color: lime;
+}
+.Author {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.AuthorBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  border-bottom: 1px solid black;
+  background-color: lime;
+  color: black;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.mycontainer {
+  background-color: black;
+  color: lime;
+}
+.postsFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 50px;
+  border: 1px solid lime;
+  border-bottom-left-radius: 10px;
+}
+
+.myContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 90%;
+}
 
 .blogFormContainer {
   display: flex;
@@ -14,11 +249,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-}
-
-.mycontainer {
-  background-color: black;
-  color: lime;
 }
 
 .App {
@@ -157,6 +387,8 @@ a {
 
 .blogButton {
   align-self: flex-end;
+  margin-top: 5px;
+  margin-bottom: 10px;
   color: lime;
   border-radius: 1px;
   border-style: double;
@@ -196,187 +428,9 @@ a {
   text-shadow: 0 0 10px lime, 0 0 2px black, 0 0 8px lime;
 }
 
-.Author {
-  margin-top: 0px;
-  border-bottom: 1px solid black;
-  background-color: lime;
-  color: black;
-  margin-bottom: 0px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-.PostTitle {
-  margin-left: 40px;
-  border-top: 1px solid lime;
-  border-bottom: 1px solid lime;
-  border-left: 1px solid lime;
-  border-right: 1px solid lime;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-bottom: 0px;
-  margin-top: 5px;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  padding-left: 5px;
-  margin-right: 20px;
-  background-color: black;
-  color: lime;
-  padding-bottom: 1px;
-}
-
-.PostText {
-  margin-left: 50px;
-  border-bottom: 1px solid lime;
-  border-left: 1px solid lime;
-  border-right: 1px solid lime;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  margin-right: 20px;
-}
-
-.PostDate::after {
-  clear: both;
-}
-
-.PostDate {
-  float: right;
-  border-top: 1px solid lime;
-  border-left: 1px solid lime;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 0px;
-  border-top-left-radius: 5px;
-}
-
-.myContainer {
-  margin-left: 20px;
-  margin-top: 70px;
-  margin-right: 40px;
-  padding-top: 0px;
-  border: 1px solid lime;
-  border-bottom-left-radius: 10px;
-}
-
 .myAboutContainer {
   margin-left: 20px;
   padding-top: 0px;
-}
-.commentAuthor {
-  margin-top: 0px;
-  border-bottom: 1px solid lime;
-  background-color: black;
-  color: white;
-  margin-bottom: 0px;
-  padding-top: 3px;
-  padding-bottom: 10px;
-}
-
-.CommentContainer {
-  border-left: 1px solid lime;
-  border-bottom: 1px solid lime;
-  border-right: 1px solid lime;
-  border-bottom-left-radius: 10px;
-  margin-left: 70px;
-  margin-right: 40px;
-}
-
-.postDeleteButton {
-  color: lime;
-  float: right;
-  border: 1px double lime;
-  margin-right: 3px;
-  margin-top: 2px;
-  border-radius: 1px;
-  border-width: medium;
-  text: bold;
-  background-color: black;
-  text-shadow: 0 0 10px #FF0000, 0 0 2px black;
-}
-.postUpdateButton {
-  color: lime;
-  float: right;
-  border: 1px double lime;
-  margin-right: 1px;
-  margin-top: 2px;
-  border-radius: 1px;
-  border-width: medium;
-  text: bold;
-  background-color: black;
-  max-height: 75%;
-  text-shadow: 0 0 10px blue, 0 0 2px black, 0 0 8px blue;
-}
-.commentDeleteButton {
-  color: lime;
-  float: right;
-  border: 1px inset lime;
-  margin-right: 3px;
-  margin-top: 2px;
-  margin-bottom: 1px;
-  border-radius: 1px;
-  border-width: thin;
-  text: bold;
-  background-color: black;
-  text-shadow: 0 0 10px red, 0 0 2px black, 0 0 8px red;
-}
-.commentUpdateButton {
-  color: lime;
-  float: right;
-  border: 1px inset lime;
-  margin-right: 3px;
-  margin-top: 2px;
-  margin-bottom: 1px;
-  border-radius: 1px;
-  border-width: thin;
-  text: bold;
-  background-color: black;
-  max-height: 75%;
-  text-shadow: 0 0 10px blue, 0 0 2px black, 0 0 8px blue;
-}
-
-.CommentButton::after {
-  clear: both;
-}
-
-.CommentButton {
-    border-radius: 1px;
-    border-style: double;
-    border-color: lime;
-    border-width: thin;
-    text: bold;
-    float: right;
-    background-color: black;
-    color: lime;
-    text-shadow: 0 0 5px white, 0 0 2px black, 0 0 6px white;
-}
-
-.commentText {
-    margin-left: 50px;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    margin-right: 20px;
-}
-.commentForm {
-  color: lime;
-  background-color: black;
-  border-left: 1px solid lime;
-  border-bottom: 1px solid lime;
-  border-right: 1px solid lime;
-  margin-left: 80px;
-  margin-right: 40px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  padding: 10px 10px 40px 10px;
 }
 
 .mytextarea {
@@ -385,11 +439,6 @@ a {
   border-color: lime;
   background-color: black;
   border-radius: 5px;
-}
-
-.myFormGroup {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
 }
 
 .infoComponent {
@@ -420,13 +469,4 @@ a {
   background-color: black;
   margin-right: 237px;
   text-shadow: 0 0 10px lime, 0 0 2px black, 0 0 8px lime;
-}
-
-.BlogTitle {
-  margin-bottom: 10px;
-  width: 30%;
-  border-color: lime;
-  color: lime;
-  background-color: black;
-  border-width: thin;
 }

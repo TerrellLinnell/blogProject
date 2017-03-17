@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, FormGroup, Button} from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
 var UpdateCommentForm = function (props) {
   return (

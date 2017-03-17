@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormControl, FormGroup, Button, Col } from 'react-bootstrap';
+import { Form, FormControl, FormGroup, Button } from 'react-bootstrap';
 // import { Link } from 'react-router';
 import $ from 'jquery';
 
