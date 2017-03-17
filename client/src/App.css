@@ -446,14 +446,10 @@ a {
 
 .HomeBody {
   text-align: left;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10%;
+  padding-right: 30%;
   padding-top: 8px;
   padding-bottom: 5px;
-  text-indent: 15px ;
-  display: inline-block;
-  margin-right: 200px;
-  margin-left: 40px;
   margin-top: 50px;
 }
 
