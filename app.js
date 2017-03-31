@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var uriUtil = require('mongodb-uri');
 
 var app = express();
 
@@ -14,7 +15,17 @@ var flash = require('connect-flash');
 
 var morgan = require('morgan');
 
-mongoose.connect('mongodb://localhost/blog');
+var options = {
+server:  { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+replset: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }
+};
+
+var mongodbUri = process.env.MONGODB_URI || "mongodb://localhost/blog";
+var mongooseUri = uriUtil.formatMongoose(mongodbUri);
+
+mongoose.connect(mongooseUri, options);
+
+// mongoose.connect('mongodb://localhost/blog');
 
 var postRoutes = require('./routes/Post');
 // view engine setup
