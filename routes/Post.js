@@ -13,7 +13,7 @@ Router.route('/posts')
       path:     'comments',
       populate: {path: 'author'}
     })
-    .sort('date')
+    .sort('-date')
     .exec(function (err, posts) {
     if (err) {
       console.log(err);
