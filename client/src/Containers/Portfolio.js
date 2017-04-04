@@ -32,7 +32,7 @@ var Portfolio = React.createClass({
         return item.type === "PushEvent";
       }).map(function (item) {
         return {
-          repo: item.repo.name,
+          repo:    item.repo.name,
           message: item.payload.commits.map(function (item) {
             return item.message;
           })
