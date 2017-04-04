@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import './App.css';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
-import Home from './Home';
-import About from './About';
-import Portfolio from './Portfolio';
-import Signup from './Signup';
-import Login from './Login';
-import Blog from './Blog';
-import UpdatePostContainer from './UpdatePostContainer';
-import UpdateCommentContainer from './UpdateCommentContainer';
+import Home from './Views/Home';
+import About from './Containers/About';
+import Portfolio from './Containers/Portfolio';
+import Signup from './Containers/Signup';
+import Login from './Containers/Login';
+import Blog from './Containers/Blog';
+import UpdatePostContainer from './Containers/UpdatePostContainer';
+import UpdateCommentContainer from './Containers/UpdateCommentContainer';
 
 ReactDOM.render(
   <Router history={hashHistory} >

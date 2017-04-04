@@ -1,13 +1,13 @@
 import React from 'react';
 import $ from 'jquery';
-import UpdatePostForm from './UpdatePostForm';
+import UpdatePostForm from '../Views/UpdatePostForm';
 
 var UpdatePostContainer = React.createClass({
   getInitialState: function () {
     return (
       {
         title: null,
-        text: null
+        text:  null
       }
     );
   },
@@ -17,7 +17,7 @@ var UpdatePostContainer = React.createClass({
   getPostById: function () {
     var that = this;
     $.ajax({
-      url: '/api/posts/' + this.props.params.postId,
+      url:    '/api/posts/' + this.props.params.postId,
       method: 'GET'
     }).done(function (data) {
       console.log(data);
@@ -32,9 +32,9 @@ var UpdatePostContainer = React.createClass({
   onClickHandler: function functionName() {
     var that = this;
     $.ajax({
-      url: '/api/posts/' + this.props.params.postId,
+      url:    '/api/posts/' + this.props.params.postId,
       method: "PUT",
-      data: this.state
+      data:   this.state
     }).done(function () {
       console.log("Updated post with id: " + that.props.params.postId );
       window.location='/#/blog'

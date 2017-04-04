@@ -1,11 +1,10 @@
 import React from 'react';
 import $ from 'jquery';
-import { Table } from 'react-bootstrap';
 
-var PortfolioComponent = React.createClass({
+var Portfolio = React.createClass({
   getInitialState: function () {
     return {
-      repos: [],
+      repos:   [],
       commits: []
     }
   },
@@ -15,7 +14,7 @@ var PortfolioComponent = React.createClass({
   getReposFromGitHub: function () {
     var self = this;
     $.ajax({
-      url: 'https://api.github.com/users/terrelllinnell/repos',
+      url:    'https://api.github.com/users/terrelllinnell/repos',
       method: 'GET'
     }).done(function (data) {
       console.log(data);
@@ -26,7 +25,7 @@ var PortfolioComponent = React.createClass({
       self.setState({repos: repos});
     });
     $.ajax({
-      url: 'https://api.github.com/users/terrelllinnell/events',
+      url:    'https://api.github.com/users/terrelllinnell/events',
       method: 'GET'
     }).done(function (data) {
       var commits = data.filter(function (item) {
@@ -81,4 +80,4 @@ var PortfolioComponent = React.createClass({
 }
 
 });
-export default PortfolioComponent;
+export default Portfolio;

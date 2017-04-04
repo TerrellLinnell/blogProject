@@ -1,6 +1,6 @@
 import React from 'react';
-import Story from './StoryComponent';
-import Info from './InfoComponent';
+import Story from '../Views/StoryComponent';
+import Info  from '../Views/InfoComponent';
 
 var About = function () {
   return (

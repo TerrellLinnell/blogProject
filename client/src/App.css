@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  background-color: black;
+  color: lime;
+}
+
 .postDeleteButton {
   align-self: flex-end;
   color: lime;

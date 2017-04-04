@@ -1,6 +1,5 @@
 import React from 'react';
-import { Form, FormControl, FormGroup, Button } from 'react-bootstrap';
-// import { Link } from 'react-router';
+import {Form, FormControl, FormGroup, Button} from 'react-bootstrap';
 import $ from 'jquery';
 
 var Signup = React.createClass({
@@ -18,9 +17,9 @@ var Signup = React.createClass({
   onSubmitHandler: function () {
     var self = this;
     $.ajax({
-      url:'/login',
-      method:"POST",
-      data: this.state
+      url:    '/login',
+      method: "POST",
+      data:   this.state
     }).done(function (data) {
       if (data.local) {
         alert('User logged in');

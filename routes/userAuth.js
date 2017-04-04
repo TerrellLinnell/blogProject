@@ -1,4 +1,4 @@
-var User = require('../models/user');
+var User     = require('../models/user');
 var Location = require ('../models/location');
 
 
@@ -62,9 +62,9 @@ app.post('/Update', isLoggedIn, function (req, res) {
       console.log(err);
     } else {
       var location = new Location();
-      location.city = req.body.city;
+      location.city  = req.body.city;
       location.state = req.body.state;
-      location.zip = req.body.zip;
+      location.zip   = req.body.zip;
 
       location.save(function (err, location) {
         if (err) {

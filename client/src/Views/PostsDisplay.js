@@ -1,6 +1,6 @@
 import React from 'react';
 import Moment from 'moment';
-import { Form, Button } from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
 var PostsDisplay = function (props) {
   var Posts = [];

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Form, FormControl, FormGroup, Button } from 'react-bootstrap';
-// import { Link } from 'react-router';
+import {Form, FormControl, FormGroup, Button} from 'react-bootstrap';
 import $ from 'jquery';
 
 var Signup = React.createClass({

@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Link } from 'react-router';
+import {Link} from 'react-router';
 import {Navbar, NavItem, Nav} from 'react-bootstrap';
 import $ from 'jquery';
 
 var App = React.createClass({
   onClickHandler: function () {
           $.ajax({
-            url: '/logout',
+            url:    '/logout',
             method: 'GET',
           }).done(function () {
             console.log('User logged out');

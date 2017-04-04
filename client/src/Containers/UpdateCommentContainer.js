@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import UpdateCommentForm from './UpdateCommentForm';
+import UpdateCommentForm from '../Views/UpdateCommentForm';
 
 var UpdateCommentContainer = React.createClass({
   getInitialState: function () {
@@ -16,7 +16,7 @@ var UpdateCommentContainer = React.createClass({
   getCommentById: function () {
     var that = this;
     $.ajax({
-      url: '/api/posts/comments/' + this.props.params.commentId,
+      url:    '/api/posts/comments/' + this.props.params.commentId,
       method: 'GET'
     }).done(function (data) {
       console.log(data);
@@ -30,9 +30,9 @@ var UpdateCommentContainer = React.createClass({
   },
   CommentOnClickHandler: function () {
       $.ajax({
-        url: '/api/posts/comments/' + this.props.params.commentId,
+        url:    '/api/posts/comments/' + this.props.params.commentId,
         method: 'PUT',
-        data: this.state
+        data:   this.state
       }).done(function (data) {
         console.log(data);
         window.location='/#/blog'
@@ -41,13 +41,12 @@ var UpdateCommentContainer = React.createClass({
   onClickHandler: function functionName() {
     var that = this;
     $.ajax({
-      url: '/api/posts/comments/' + this.props.params.commentId,
+      url:    '/api/posts/comments/' + this.props.params.commentId,
       method: "PUT",
-      data: this.state
+      data:   this.state
     }).done(function () {
       console.log("Updated comment with id: " + that.props.params.commentId );
       window.location='/#/blog'
-
     })
   },
   render: function () {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import {Jumbotron} from 'react-bootstrap';
 
 var Home = function (props) {
   return (

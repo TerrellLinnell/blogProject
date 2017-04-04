@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormControl, Button } from 'react-bootstrap';
+import {Form, FormControl, Button} from 'react-bootstrap';
 
 var BlogForm = function (props) {
   return (
