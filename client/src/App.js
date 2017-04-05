@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {Link} from 'react-router';
 import {Navbar, NavItem, Nav} from 'react-bootstrap';
 import $ from 'jquery';
