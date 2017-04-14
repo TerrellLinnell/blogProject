@@ -191,7 +191,7 @@ body {
 .PostTitle {
   align-self: center;
   width: 90%;
-  border-bottom: 1px solid lime;
+  border-bottom: 2px solid lime;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
